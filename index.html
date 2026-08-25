@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fethiye Ela Evden Eve Nakliyat | Profesyonel Taşımacılık</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-main: #07090e;
+            --bg-card: #111827;
+            --neon-orange: #f97316;
+            --neon-glow: rgba(249, 115, 22, 0.4);
+            --whatsapp-green: #25d366;
+            --whatsapp-glow: rgba(37, 211, 102, 0.4);
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-neon: rgba(249, 115, 22, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ÜST KAYAN BANT (TICKER) */
+        .ticker-bar {
+            background: linear-gradient(90deg, #1e1b4b, #0f172a, #1e1b4b);
+            color: #fb923c;
+            font-size: 0.85rem;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            border-bottom: 1px solid rgba(249, 115, 22, 0.2);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.1);
+        }
+
+        .ticker-content {
+            display: inline-block;
+            animation: tickerAnim 28s linear infinite;
+            padding-left: 100%;
+        }
+
+        .ticker-content span {
+            margin-right: 25px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .ticker-content span i {
+            color: #fff;
+            margin-right: 8px;
+        }
+
+        @keyframes tickerAnim {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        /* İLETİŞİM ŞERİDİ */
+        .info-bar {
+            background-color: #0b0f19;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .info-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-item i {
+            color: var(--neon-orange);
+            margin-right: 6px;
+        }
+
+        .info-actions {
+            display: flex;
+            gap: 20px;
+        }
+
+        .info-actions a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .info-actions .top-wa {
+            color: #4ade80;
+        }
+
+        /* HEADER */
+        header {
+            background: rgba(11, 15, 25, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo a {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--text-light);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--neon-orange);
+            text-shadow: 0 0 10px var(--neon-glow);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--neon-orange);
+        }
+
+        .nav-btn-wa {
+            background-color: var(--whatsapp-green) !important;
+            color: #fff !important;
+            padding: 9px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 0 15px var(--whatsapp-glow);
+            transition: 0.3s;
+        }
+
+        .nav-btn-wa:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--whatsapp-glow);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            background: radial-gradient(circle at center, #1e1b4b 0%, var(--bg-main) 100%);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 850px;
+        }
+
+        /* DİKKAT ÇEKİCİ ANİMASYONLU DUYURU ROZETİ */
+        .hero-announcement {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(249, 115, 22, 0.15);
+            color: #fb923c;
+            border: 1px solid var(--border-neon);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+            animation: pulseGlow 2s infinite;
+        }
+
+        .hero-announcement i {
+            color: var(--neon-orange);
+            font-size: 1.1rem;
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 15px rgba(249, 115, 22, 0.2); }
+            50% { box-shadow: 0 0 30px rgba(249, 115, 22, 0.5); border-color: rgba(249, 115, 22, 0.8); }
+            100% { box-shadow: 0 0 15px rgba(249, 115, 22, 0.2); }
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: var(--neon-orange);
+            text-shadow: 0 0 20px var(--neon-glow);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* FİLO GÖRSELİ BÖLÜMÜ */
+        .fleet-banner-section {
+            width: 100%;
+            padding: 40px 0;
+            background-color: var(--bg-main);
+        }
+
+        .fleet-banner-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-neon);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(249, 115, 22, 0.2);
+        }
+
+        .fleet-banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            max-height: 550px;
+            transition: transform 0.6s ease;
+        }
+
+        .fleet-banner-container:hover img {
+            transform: scale(1.02);
+        }
+
+        .fleet-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(7, 9, 14, 0.9) 0%, transparent 60%);
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+        }
+
+        .fleet-caption h3 {
+            color: var(--neon-orange);
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-shadow: 0 0 15px var(--neon-glow);
+            margin-bottom: 6px;
+        }
+
+        .fleet-caption p {
+            color: var(--text-light);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* BUTONLAR */
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #fff;
+            box-shadow: 0 0 20px var(--whatsapp-glow);
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px var(--whatsapp-green);
+        }
+
+        .btn-call {
+            background-color: var(--neon-orange);
+            color: #fff;
+            box-shadow: 0 0 20px var(--neon-glow);
+        }
+        .btn-call:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px var(--neon-orange);
+        }
+
+        /* KATEGORİLER BÖLÜMÜ */
+        .categories-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, var(--bg-main) 0%, #0d1322 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h4 {
+            color: var(--neon-orange);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            text-shadow: 0 0 10px var(--neon-glow);
+        }
+
+        .section-title h2 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .cat-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 35px 25px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--neon-orange), transparent);
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--border-neon);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(249, 115, 22, 0.15);
+        }
+
+        .cat-card:hover::before {
+            opacity: 1;
+        }
+
+        .cat-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--neon-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.1);
+            transition: 0.4s;
+        }
+
+        .cat-card:hover .cat-icon {
+            background: var(--neon-orange);
+            color: #fff;
+            box-shadow: 0 0 25px var(--neon-glow);
+        }
+
+        .cat-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .cat-card p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .cat-offer-btn {
+            background: rgba(37, 211, 102, 0.15);
+            color: #4ade80;
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .cat-offer-btn:hover {
+            background-color: var(--whatsapp-green);
+            color: #fff;
+            box-shadow: 0 0 20px var(--whatsapp-glow);
+            transform: scale(1.02);
+        }
+
+        /* REFERANSLAR SLIDER */
+        .slider-section {
+            padding: 80px 0;
+            background-color: #0b0f19;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6), 0 0 20px rgba(249, 115, 22, 0.15);
+            border: 1px solid var(--border-neon);
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+            height: 450px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(7,9,14,0.95), transparent);
+            padding: 30px 25px 20px 25px;
+        }
+
+        .slide-caption span {
+            color: var(--neon-orange);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-shadow: 0 0 10px var(--neon-glow);
+        }
+
+        /* Slider Kontrol Okları */
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(11, 15, 25, 0.8);
+            color: var(--neon-orange);
+            border: 1px solid var(--border-neon);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            z-index: 10;
+        }
+
+        .slider-btn:hover {
+            background-color: var(--neon-orange);
+            color: #fff;
+            box-shadow: 0 0 15px var(--neon-glow);
+        }
+
+        .prev-btn { left: 15px; }
+        .next-btn { right: 15px; }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 10;
+            max-width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .dot.active {
+            background: var(--neon-orange);
+            box-shadow: 0 0 10px var(--neon-glow);
+            width: 20px;
+            border-radius: 4px;
+        }
+
+        /* İLETİŞİM ALANI */
+        .contact-section {
+            padding: 80px 0;
+            background: radial-gradient(circle at center, #111827 0%, var(--bg-main) 100%);
+        }
+
+        .contact-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-neon);
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6), 0 0 25px rgba(249, 115, 22, 0.1);
+        }
+
+        .contact-info {
+            padding: 40px;
+            background: rgba(7, 9, 14, 0.6);
+            border-right: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .contact-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--neon-orange);
+            text-shadow: 0 0 10px var(--neon-glow);
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .contact-info i {
+            color: var(--neon-orange);
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--neon-orange);
+        }
+
+        .contact-actions {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-actions h4 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-actions p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #05070a;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tan-medya span {
+            color: var(--neon-orange);
+            font-weight: 700;
+            text-shadow: 0 0 10px var(--neon-glow);
+        }
+
+        /* RESPONSIVE OPTIMIZATION */
+        @media (max-width: 900px) {
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+            .info-bar {
+                display: none;
+            }
+            .slide {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: rgba(11, 15, 25, 0.98);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+                text-align: center;
+                padding: 30px 0;
+                gap: 20px;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 2.1rem;
+            }
+
+            .hero-announcement {
+                font-size: 0.75rem;
+                padding: 8px 14px;
+                text-align: center;
+            }
+
+            .footer-flex {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ÜST KAYAN BANT (TICKER) -->
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            <span><i class="fas fa-truck-moving"></i> Evden Eve Nakliyat</span>
+            <span>•</span>
+            <span><i class="fas fa-route"></i> Şehirler Arası Nakliye</span>
+            <span>•</span>
+            <span><i class="fas fa-building"></i> Ofis & Büro Taşımacılığı</span>
+            <span>•</span>
+            <span><i class="fas fa-boxes-packing"></i> Asansörlü Taşımacılık</span>
+            <span>•</span>
+            <span><i class="fas fa-warehouse"></i> Eşya Depolama</span>
+            <span>•</span>
+            <span><i class="fas fa-shield-alt"></i> Sigortalı Güvenli Nakliyat</span>
+            <span>•</span>
+            <span><i class="fas fa-box"></i> Parça Eşya Taşımacılığı</span>
+        </div>
+    </div>
+
+    <!-- İLETİŞİM ŞERİDİ -->
+    <div class="info-bar">
+        <div class="container info-flex">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i> Taşyaka Mah. 200. Sok. No:9, Fethiye / Muğla
+            </div>
+            <div class="info-actions">
+                <a href="tel:05317260488" class="top-call"><i class="fas fa-phone-alt"></i> 0531 726 04 88</a>
+                <a href="https://wa.me/905317260488?text=Merhaba,%20bilgi%20almak%20istiyorum." class="top-wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#">Fethiye Ela <span>Nakliyat</span></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#kategoriler">Hizmet Kategorileri</a></li>
+                    <li><a href="#referanslar">Referans İşler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                    <li><a href="https://wa.me/905317260488?text=Merhaba,%20hızlı%20fiyat%20teklifi%20almak%20istiyorum." class="nav-btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Teklif Al</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- DİKKAT ÇEKİCİ ANİMASYONLU DUYURU -->
+            <div class="hero-announcement">
+                <i class="fas fa-bullhorn"></i> HAFTALIK; FETHİYE-ANTALYA / ANKARA-İSTANBUL SEFERLERİMİZ MEVCUTTUR
+            </div>
+            <br>
+            <span class="hero-tag"><i class="fas fa-shield-halved"></i> Fethiye Merkezli Güvenli Kurumsal Taşımacılık</span>
+            <h1>Her Sektöre ve İhtiyaca Özel <br><span>Profesyonel Nakliye</span> Çözümleri</h1>
+            <p>Evinizden ofisinize, parça eşyanızdan şehirler arası sevkiyatlarınıza kadar tüm taşımacılık işlemleriniz %100 sigortalı güvenceyle yapılır.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/905317260488?text=Merhaba,%20evden%20eve%20nakliyat%20için%20fiyat%20teklifi%20almak%20istiyorum." class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Teklif Al
+                </a>
+                <a href="tel:05317260488" class="btn btn-call">
+                    <i class="fas fa-phone-alt"></i> Hemen Ara: 0531 726 04 88
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FİLO GÖRSELİ BÖLÜMÜ -->
+    <section class="fleet-banner-section">
+        <div class="fleet-banner-container">
+            <img src="images/filo.png" alt="Fethiye Ela Nakliyat Geniş Filosu">
+            <div class="fleet-overlay">
+                <div class="fleet-caption">
+                    <h3>Geniş Araç Filomuzla Hizmetinizdeyiz</h3>
+                    <p>Farklı tonaj ve kapasiteye sahip araçlarımızla şehir içi ve şehirler arası güvenli taşımacılık.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATEGORİLER VE NEON BUTONLAR -->
+    <section id="kategoriler" class="categories-section">
+        <div class="container">
+            <div class="section-title">
+                <h4>HİZMET KATEGORİLERİMİZ</h4>
+                <h2>Sektörel Taşımacılık Çözümleri</h2>
+                <p>Almak istediğiniz hizmetin altındaki butona tıklayarak doğrudan WhatsApp üzerinden anında teklif isteyin.</p>
+            </div>
+
+            <div class="category-grid">
+                <!-- Kategori 1 -->
+                <div class="cat-card">
+                    <div class="cat-icon"><i class="fas fa-truck-moving"></i></div>
+                    <h3>Evden Eve Nakliyat</h3>
+                    <p>Ev eşyalarınız özenle paketlenir, demonte edilir ve yeni adresinizde anahtar teslim kurulur.</p>
+                    <a href="https://wa.me/905317260488?text=Merhaba,%20Evden%20Eve%20Nakliyat%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." class="cat-offer-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Teklif Al (WhatsApp)
+                    </a>
+                </div>
+
+                <!-- Kategori 2 -->
+                <div class="cat-card">
+                    <div class="cat-icon"><i class="fas fa-route"></i></div>
+                    <h3>Şehirler Arası Nakliyat</h3>
+                    <p>Fethiye'den Türkiye'nin 81 iline sigortalı, güvenli ve zamanında şehirler arası sevkiyat.</p>
+                    <a href="https://wa.me/905317260488?text=Merhaba,%20Şehirler%20Arası%20Nakliyat%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." class="cat-offer-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Teklif Al (WhatsApp)
+                    </a>
+                </div>
+
+                <!-- Kategori 3 -->
+                <div class="cat-card">
+                    <div class="cat-icon"><i class="fas fa-building"></i></div>
+                    <h3>Ofis & Büro Taşımacılığı</h3>
+                    <p>İş yeriniz aksamadan, evrak ve teknolojik ekipmanlarınız planlı şekilde yeni ofisinize taşınır.</p>
+                    <a href="https://wa.me/905317260488?text=Merhaba,%20Ofis%20ve%20Büro%20Taşımacılığı%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." class="cat-offer-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Teklif Al (WhatsApp)
+                    </a>
+                </div>
+
+                <!-- Kategori 4 -->
+                <div class="cat-card">
+                    <div class="cat-icon"><i class="fas fa-boxes-packing"></i></div>
+                    <h3>Asansörlü Taşımacılık</h3>
+                    <p>Yüksek katlı binalarda bina içi hasarları önleyen modern dış cephe mobil asansör sistemleri.</p>
+                    <a href="https://wa.me/905317260488?text=Merhaba,%20Asansörlü%20Taşımacılık%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." class="cat-offer-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Teklif Al (WhatsApp)
+                    </a>
+                </div>
+
+                <!-- Kategori 5 (EŞYA DEPOLAMA EKLENDİ) -->
+                <div class="cat-card">
+                    <div class="cat-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Eşya Depolama</h3>
+                    <p>Eşyalarınız güvenli, nemsiz ve 7/24 kameralarla korunan modern depolarımızda sigortalı saklanır.</p>
+                    <a href="https://wa.me/905317260488?text=Merhaba,%20Eşya%20Depolama%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." class="cat-offer-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Teklif Al (WhatsApp)
+                    </a>
+                </div>
+
+                <!-- Kategori 6 -->
+                <div class="cat-card">
+                    <div class="cat-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Sigortalı Nakliyat</h3>
+                    <p>Tüm eşyalarınız yolculuk süresince olası risklere karşı tam kapsamlı güvence altında tutulur.</p>
+                    <a href="https://wa.me/905317260488?text=Merhaba,%20Sigortalı%20Nakliyat%20hizmeti%20için%20fiyat%20teklifi%20almak%20istiyorum." class="cat-offer-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Teklif Al (WhatsApp)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFERANSLAR (14 GÖRSEL SLAYT) -->
+    <section id="referanslar" class="slider-section">
+        <div class="container">
+            <div class="section-title">
+                <h4>GALERİ</h4>
+                <h2>Referans İşlerimiz</h2>
+                <p>Gerçekleştirdiğimiz başarılı ve titiz taşıma operasyonlarımızdan kareler.</p>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide"><img src="images/referans1.jpeg" alt="Referans 1"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 1</span></div></div>
+                    <div class="slide"><img src="images/referans2.jpeg" alt="Referans 2"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 2</span></div></div>
+                    <div class="slide"><img src="images/referans3.jpeg" alt="Referans 3"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 3</span></div></div>
+                    <div class="slide"><img src="images/referans4.jpeg" alt="Referans 4"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 4</span></div></div>
+                    <div class="slide"><img src="images/referans5.jpeg" alt="Referans 5"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 5</span></div></div>
+                    <div class="slide"><img src="images/referans6.jpeg" alt="Referans 6"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 6</span></div></div>
+                    <div class="slide"><img src="images/referans7.jpeg" alt="Referans 7"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 7</span></div></div>
+                    <div class="slide"><img src="images/referans8.jpeg" alt="Referans 8"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 8</span></div></div>
+                    <div class="slide"><img src="images/referans9.jpeg" alt="Referans 9"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 9</span></div></div>
+                    <div class="slide"><img src="images/referans10.jpeg" alt="Referans 10"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 10</span></div></div>
+                    <div class="slide"><img src="images/referans11.jpeg" alt="Referans 11"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 11</span></div></div>
+                    <div class="slide"><img src="images/referans12.jpeg" alt="Referans 12"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 12</span></div></div>
+                    <div class="slide"><img src="images/referans13.jpeg" alt="Referans 13"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 13</span></div></div>
+                    <div class="slide"><img src="images/referans14.jpeg" alt="Referans 14"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 14</span></div></div>
+                </div>
+
+                <!-- Kontrol Okları -->
+                <button class="slider-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+
+                <!-- Noktalar -->
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                    <span class="dot" data-index="6"></span>
+                    <span class="dot" data-index="7"></span>
+                    <span class="dot" data-index="8"></span>
+                    <span class="dot" data-index="9"></span>
+                    <span class="dot" data-index="10"></span>
+                    <span class="dot" data-index="11"></span>
+                    <span class="dot" data-index="12"></span>
+                    <span class="dot" data-index="13"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3>Fethiye Ela Nakliyat</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Taşyaka Mahallesi 200. Sokak No: 9, Fethiye / Muğla</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:05317260488">0531 726 04 88</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/905317260488" target="_blank">WhatsApp İletişim Hattı</a></p>
+                </div>
+                <div class="contact-actions">
+                    <h4>Hemen İletişime Geçin</h4>
+                    <p>Detaylı bilgi ve randevu oluşturmak için doğrudan bizi arayabilir ya da WhatsApp'tan yazabilirsiniz.</p>
+                    <div class="action-btns">
+                        <a href="https://wa.me/905317260488?text=Merhaba,%20bilgi%20almak%20istiyorum." class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                        </a>
+                        <a href="tel:05317260488" class="btn btn-call">
+                            <i class="fas fa-phone-alt"></i> Hemen Ara: 0531 726 04 88
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-flex">
+            <p>&copy; 2026 Fethiye Ela Evden Eve Nakliyat. Tüm hakları saklıdır.</p>
+            <p class="tan-medya">Bu web sitesi <span>TAN MEDYA TASARIM</span> Tarafından Kurulmuştur.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            if (navList.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                const icon = mobileMenu.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        /* --- SLIDER MANTIĞI --- */
+        const sliderTrack = document.getElementById('sliderTrack');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dots = document.querySelectorAll('.dot');
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateSlider() {
+            sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                currentIndex = parseInt(e.target.getAttribute('data-index'));
+                updateSlider();
+            });
+        });
+
+        let slideInterval = setInterval(nextSlide, 4000);
+
+        const sliderContainer = document.querySelector('.slider-container');
+        sliderContainer.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        sliderContainer.addEventListener('mouseleave', () => slideInterval = setInterval(nextSlide, 4000));
+    </script>
+</body>
+</html>
