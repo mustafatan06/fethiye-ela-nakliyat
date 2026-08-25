@@ -268,7 +268,7 @@
             flex-wrap: wrap;
         }
 
-        /* FİLO GÖRSELİ BÖLÜMÜ */
+        /* FİLO GÖRSELİ BÖLÜMÜ (YAZISIZ, TAM BOYUT VE UZATILMIŞ ÇERÇEVE) */
         .fleet-banner-section {
             width: 100%;
             padding: 40px 0;
@@ -288,7 +288,7 @@
 
         .fleet-banner-container img {
             width: 100%;
-            height: 380px;
+            height: 480px; /* Masaüstünde geniş, ferah ve tam boyut */
             display: block;
             object-fit: cover;
             transition: transform 0.6s ease;
@@ -296,29 +296,6 @@
 
         .fleet-banner-container:hover img {
             transform: scale(1.02);
-        }
-
-        .fleet-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(7, 9, 14, 0.9) 0%, transparent 60%);
-            display: flex;
-            align-items: flex-end;
-            padding: 30px;
-        }
-
-        .fleet-caption h3 {
-            color: var(--neon-orange);
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-shadow: 0 0 15px var(--neon-glow);
-            margin-bottom: 6px;
-        }
-
-        .fleet-caption p {
-            color: var(--text-light);
-            font-size: 1rem;
-            font-weight: 500;
         }
 
         /* BUTONLAR */
@@ -693,7 +670,7 @@
             text-shadow: 0 0 10px var(--neon-glow);
         }
 
-        /* MOBİL UYUMLULUK VE GÖRSEL ÖLÇEKLEME AYARLARI */
+        /* MOBİL UYUMLULUK VE ÖLÇEKLEME AYARLARI */
         @media (max-width: 900px) {
             .contact-box {
                 grid-template-columns: 1fr;
@@ -737,9 +714,9 @@
                 text-align: center;
             }
 
-            /* Mobilde filo görselinin orantılı ve şık durması */
+            /* Mobilde filo görselinin çerçevesi uzatıldı ve tam boyuta getirildi */
             .fleet-banner-container img {
-                height: 240px; 
+                height: 320px; 
             }
 
             /* Mobilde slider referans görsellerinin ölçeklenmesi */
@@ -830,16 +807,10 @@
         </div>
     </section>
 
-    <!-- FİLO GÖRSELİ BÖLÜMÜ -->
+    <!-- FİLO GÖRSELİ BÖLÜMÜ (YAZISIZ VE TAM BOYUT) -->
     <section class="fleet-banner-section">
         <div class="fleet-banner-container">
             <img src="images/filo.png" alt="Fethiye Ela Nakliyat Geniş Filosu">
-            <div class="fleet-overlay">
-                <div class="fleet-caption">
-                    <h3>Geniş Araç Filomuzla Hizmetinizdeyiz</h3>
-                    <p>Farklı tonaj ve kapasiteye sahip araçlarımızla şehir içi ve şehirler arası güvenli taşımacılık.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -916,7 +887,7 @@
         </div>
     </section>
 
-    <!-- REFERANSLAR (14 GÖRSEL SLAYT) -->
+    <!-- REFERANSLAR (11 NUMARA TEMİZLENDİ) -->
     <section id="referanslar" class="slider-section">
         <div class="container">
             <div class="section-title">
@@ -937,7 +908,6 @@
                     <div class="slide"><img src="images/referans8.jpeg" alt="Referans 8"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 8</span></div></div>
                     <div class="slide"><img src="images/referans9.jpeg" alt="Referans 9"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 9</span></div></div>
                     <div class="slide"><img src="images/referans10.jpeg" alt="Referans 10"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 10</span></div></div>
-                    <div class="slide"><img src="images/referans11.jpeg" alt="Referans 11"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 11</span></div></div>
                     <div class="slide"><img src="images/referans12.jpeg" alt="Referans 12"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 12</span></div></div>
                     <div class="slide"><img src="images/referans13.jpeg" alt="Referans 13"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 13</span></div></div>
                     <div class="slide"><img src="images/referans14.jpeg" alt="Referans 14"><div class="slide-caption"><span>Fethiye Nakliye Operasyonu 14</span></div></div>
@@ -947,7 +917,7 @@
                 <button class="slider-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
                 <button class="slider-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
 
-                <!-- Noktalar -->
+                <!-- Noktalar (13 adet) -->
                 <div class="slider-dots" id="sliderDots">
                     <span class="dot active" data-index="0"></span>
                     <span class="dot" data-index="1"></span>
@@ -962,7 +932,6 @@
                     <span class="dot" data-index="10"></span>
                     <span class="dot" data-index="11"></span>
                     <span class="dot" data-index="12"></span>
-                    <span class="dot" data-index="13"></span>
                 </div>
             </div>
         </div>
